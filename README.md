@@ -20,12 +20,6 @@ O foco deste projeto é simular uma comunicação entre duas APIs independentes,
 Como executar
 Clone este repositório.
 
-bash
-Copiar
-Editar
-git clone https://github.com/fezleep/Python-FastAPI-Node.js-test.git
-Acesse a pasta do projeto e instale as dependências de cada aplicação.
-
 Backend Python (FastAPI)
 bash
 Copiar
