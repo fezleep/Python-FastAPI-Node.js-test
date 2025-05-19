@@ -1,39 +1,50 @@
-Python-FastAPI-Node.js-test
+PROJETO FULLSTACK SIMPLES (FastAPI + Express)
 
-Este projeto foi desenvolvido como parte dos meus estudos para praticar a criação e integração de APIs RESTful utilizando Python com FastAPI e Node.js com Express. O objetivo é entender como serviços escritos em linguagens diferentes podem se comunicar. 
-Faz parte do meu processo de aprendizado em desenvolvimento backend e integração de APIs. Ainda estou me aperfeiçoando na área e desenvolvendo projetos pessoais para praticar conceitos e ferramentas. Se quiser acompanhar, o repositório está aberto para feedbacks e sugestões.
+BACKEND (FastAPI - Python)
 
+Roda em http://localhost:8000
 
-Tecnologias utilizadas:
+Endpoint: /items/ → retorna {"items": ["item1", "item2", "item3"]}
 
-Python 3.11
-FastAPI
-Uvicorn
-Node.js
-Express
-Axios
+Configurado CORS para liberar o frontend
 
-Objetivo do projeto:
+FRONTEND (Express - Node.js)
 
-O foco deste projeto é simular a comunicação entre duas APIs independentes, cada uma desenvolvida com uma tecnologia diferente. A aplicação em Python recebe uma requisição, processa e responde, enquanto o serviço em Node.js consome essa API e exibe os dados no terminal.
+Roda em http://localhost:3000
 
-Como executar:
+Pega dados da API (/items/) usando Axios
 
-Clone este repositório:
-git clone https://github.com/fezleep/Python-FastAPI-Node.js-test.git
+Mostra os itens num template EJS
 
-Acesse a pasta do projeto e instale as dependências de cada aplicação.
+COMO RODAR:
 
-Backend Python (FastAPI)
-cd backend-python
-uvicorn main:app --reload
+Backend:
 
-A API estará disponível em http://localhost:8000
+bash
+cd backend  
+uvicorn api:app --reload  
+Frontend (outro terminal):
 
-Backend Node.js (Express)
-Em outro terminal:
-cd backend-node
-npm install
-node app.js
+bash
+cd frontend  
+npm install  
+npm start  
+O QUE APRENDI:
 
-Fim!
+Como criar uma API simples (FastAPI)
+
+Como consumir API no frontend (Express + Axios)
+
+Problemas de CORS e como resolver
+
+Renderização básica com EJS
+
+PRÓXIMOS PASSOS:
+
+Add banco de dados
+
+Fazer CRUD completo
+
+Melhorar o frontend (React?)
+
+(Projeto de estudo - foco em entender a comunicação entre backend/frontend)
