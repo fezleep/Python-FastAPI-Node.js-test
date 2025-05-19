@@ -26,7 +26,6 @@ Acesse a pasta do projeto e instale as dependências de cada aplicação.
 
 Backend Python (FastAPI)
 cd backend-python
-pip install -r requirements.txt
 uvicorn main:app --reload
 
 A API estará disponível em http://localhost:8000
